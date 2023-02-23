@@ -7,7 +7,7 @@ namespace Generics_Problems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Generics Problems");
-            Console.WriteLine("1.Find Max Integer\n2.Find Max Float or Double");
+            Console.WriteLine("1.Find Max Integer\n2.Find Max Float or Double\n3.Find Maximum String");
             Console.WriteLine("Choose option from above:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -31,6 +31,16 @@ namespace Generics_Problems
                     double third = Convert.ToDouble(Console.ReadLine());
                     FindMaxFloat findMaxFloat= new FindMaxFloat();
                     findMaxFloat.Find_Maximum_Float(first, second, third);
+                    break;
+                case 3:
+                    Console.WriteLine("Enter the first string");
+                    string First = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("Enter the second string");
+                    string Second = Convert.ToString(Console.ReadLine());
+                    Console.WriteLine("Enter the third string");
+                    string Third = Convert.ToString(Console.ReadLine());
+                    FindMaxString findMaxString= new FindMaxString();
+                    findMaxString.Find_Maximum_String(First, Second, Third);
                     break;
             }
         }
