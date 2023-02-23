@@ -8,13 +8,13 @@ namespace Generics_Problems
 {
     public class FindMaxInteger
     {
-        public void Find_Maximum_Integer(int firstval , int secondval , int thirdval)
+        public void Find_Maximum_Integer(int firstval , int secondval , int thirdval) //Three parameters
         {
-            if(firstval.CompareTo(secondval) > 0 && firstval.CompareTo(thirdval)>0 )
+            if(firstval.CompareTo(secondval) > 0 && firstval.CompareTo(thirdval) > 0 )
             {
                 Console.WriteLine("{0} is maximum number", firstval);
             }
-            else if(secondval.CompareTo(firstval)>0 && secondval.CompareTo(thirdval)>0)
+            else if(secondval.CompareTo(firstval) > 0 && secondval.CompareTo(thirdval) > 0)
             {
                 Console.WriteLine("{0} is maximum number", secondval);
             }
