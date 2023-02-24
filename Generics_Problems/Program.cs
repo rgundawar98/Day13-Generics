@@ -7,7 +7,8 @@ namespace Generics_Problems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Generics Problems");
-            Console.WriteLine("1.Find Max Integer\n2.Find Max Float or Double\n3.Find Maximum String\n4.Generic Refactor one");
+            Console.WriteLine("1.Find Max Integer\n2.Find Max Float or Double\n3.Find Maximum String\n4.Generic Refactor one" +
+                "\n5.Generic Refactor Two");
             Console.WriteLine("Choose option from above:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -46,6 +47,10 @@ namespace Generics_Problems
                     GenericRefactor<int>.FindMax(120, 222, 333);
                     GenericRefactor<double>.FindMax(45.6, 55.8, 20.5);
                     GenericRefactor<string>.FindMax("Apple", "Banana", "Pineapple");
+                    break;
+                case 5:
+                    GenericsRefactorTwo<int> genericsRefactorTwo = new GenericsRefactorTwo<int>(40, 55, 80);
+                    genericsRefactorTwo.TestMaximum();
                     break;
             }
         }
