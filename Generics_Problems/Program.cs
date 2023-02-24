@@ -8,7 +8,7 @@ namespace Generics_Problems
         {
             Console.WriteLine("Welcome to the Generics Problems");
             Console.WriteLine("1.Find Max Integer\n2.Find Max Float or Double\n3.Find Maximum String\n4.Generic Refactor one" +
-                "\n5.Generic Refactor Two");
+                "\n5.Generic Refactor Two\n6.Extend Max Method MoreThan Three Parameters");
             Console.WriteLine("Choose option from above:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
@@ -51,6 +51,17 @@ namespace Generics_Problems
                 case 5:
                     GenericsRefactorTwo<int> genericsRefactorTwo = new GenericsRefactorTwo<int>(40, 55, 80);
                     genericsRefactorTwo.TestMaximum();
+                    break;
+                case 6:
+                    Console.WriteLine("Enter first number");
+                    int First_val = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter second number");
+                    int Second_val = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter third number");
+                    int Third_val = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the fourth number");
+                    int Fourth_val =Convert.ToInt32(Console.ReadLine());
+                    Extend_Max_Method<int>.FindMax(First_val,Second_val,Third_val,Fourth_val);
                     break;
             }
         }
